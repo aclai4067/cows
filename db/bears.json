@@ -1,0 +1,34 @@
+{
+  "bears": [
+    {
+      "id": "bear1",
+      "type": "grizzly",
+      "color": "brown",
+      "lastMeal": "salmon",
+      "size": "large",
+      "weight": 300,
+      "isHungry": true,
+      "location": "Alaska"
+    },
+    {
+        "id": "bear2",
+        "type": "polar",
+        "color": "white",
+        "lastMeal": "seal",
+        "size": "extra large",
+        "weight": 350,
+        "isHungry": true,
+        "location": "north pole"
+      },
+      {
+        "id": "bear3",
+        "type": "black",
+        "color": "black",
+        "lastMeal": "berries",
+        "size": "medium",
+        "weight": 200,
+        "isHungry": true,
+        "location": "Apalachia"
+      }
+  ]
+}
