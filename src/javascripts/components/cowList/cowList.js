@@ -1,9 +1,9 @@
 import './cowList.scss';
-import cowdata from '../../helpers/data/cows';
+import smash from '../../helpers/data/smash';
 // import utilities from '../../helpers/utilities';
 
 const buildCows = () => {
-  cowdata.getCows()
+  smash.getCompleteCows()
     .then((response) => {
       console.log('cow array from cowlist', response);
       // let cowString = '';
