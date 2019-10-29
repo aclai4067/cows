@@ -4,16 +4,17 @@ import cowdata from '../../helpers/data/cows';
 const buildCows = () => {
   cowdata.getCows()
     .then((response) => {
-      const demCows = response.data.cows;
-      const cows = [];
-      Object.keys(demCows).forEach((cowId) => {
-        demCows[cowId].id = cowId;
-        cows.push(demCows[cowId]);
-      });
-      console.log('it worked', cows);
+      console.log('cow array from cowlist', response);
+      let cowString = '';
+      for (let i = 0; i < response.length; i += 1) {
+        cowString += `
+         <li>${response[i].name}</li>
+        `;
+      }
+      console.log(cowString);
     })
     .catch((error) => {
-      console.error('shit broke', error);
+      console.error('it broke', error);
     });
 };
 
